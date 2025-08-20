@@ -14,50 +14,32 @@ const Projects = () => {
 				"Fintech platform providing payment solutions integrating with payment platforms like M-Pesa and banks. Built a comprehensive payment gateway that handles multiple payment methods and provides real-time transaction monitoring.",
 			link: "https://lemupay.com",
 			github: "https://github.com/username/lemupay",
-			techStack: [
-				"Angular",
-				"Spring Boot",
-				"M-Pesa API",
-				"Banking APIs",
-				"PostgreSQL",
-				"Redis",
-			],
+			techStack: ["Angular", "Vite", "Spring Boot", , "MySQL", "Azure","M-Pesa API", "Banking APIs"],
 			type: "Company Project",
 			image: lemupay,
+			hasSite: true,
 		},
 		{
 			name: "ExamCep",
 			description:
-				"A platform for students in Oklahoma to book exams, pay fees (Stripe), enroll in courses, and manage student records.",
-			link: "#",
+				"A platform servering over 1000 healthcare students to book exams, pay fees (Stripe), enroll in courses, and manage student records.",
+			link: "https://examcep.com",
 			github: "https://github.com/username/examcep",
-			techStack: [
-				"Next.js",
-				"Spring Boot",
-				"Stripe",
-				"Student Management",
-				"MySQL",
-				"JWT",
-			],
+			techStack: ["Angular","Next.js", "Spring Boot", "Stripe", "MySQL", "Azure"],
 			type: "Company Project",
 			image: examCep,
+			hasSite: false,
 		},
 		{
 			name: "JobsMonday",
 			description:
 				"Job board where hospitals post shifts and nurses/health workers claim them. Includes shift management, verification, and payments.",
-			link: "#",
+			link: "https://jobsmonday.lemu.co.ke/",
 			github: "https://github.com/username/jobsmonday",
-			techStack: [
-				"Angular",
-				"Spring Boot",
-				"Job Board",
-				"Healthcare",
-				"MongoDB",
-				"WebSocket",
-			],
+			techStack: ["Angular", "Next.js", "Spring Boot", "Stripe", "MySQL", "MongoDB", "AWS"],
 			type: "Company Project",
 			image: jobsMonday,
+			hasSite: false,
 		},
 		{
 			name: "DotCapital",
@@ -65,16 +47,11 @@ const Projects = () => {
 				"React Native loan app integrated with M‑Pesa. Features loan calculator, repayment scheduling, and credit scoring.",
 			link: "#",
 			github: "https://github.com/username/dotcapital",
-			techStack: [
-				"React Native",
-				"Spring Boot",
-				"M‑Pesa",
-				"Loan Management",
-				"SQLite",
-				"Push Notifications",
-			],
+			techStack: ["React Native", "Spring Boot", "M‑Pesa", "Loan Management", "MySQL", "Rabbit MQ"],
 			type: "Company Project",
 			image: dotCapital,
+			isMobile: true,
+			hasSite: false,
 		},
 	];
 
@@ -98,38 +75,36 @@ const ProjectRow = ({ project }) => {
 	const textInView = useInView(textRef, { margin: "-20% 0px -20% 0px" });
 
 	return (
-		<section className="relative md:min-h-[75vh] flex flex-col md:flex-row items-center justify-between gap-8">
-			{/* Image Card - independent card sliding from left, full-bleed banner */}
+		<section className="relative md:min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-8">
+			{/* Image Card - larger banner, slides from left */}
 			<motion.div
 				ref={imageRef}
-				initial={{ x: -140, opacity: 0 }}
-				animate={imageInView ? { x: 0, opacity: 1 } : { x: -140, opacity: 0 }}
+				initial={{ x: -160, opacity: 0 }}
+				animate={imageInView ? { x: 0, opacity: 1 } : { x: -160, opacity: 0 }}
 				transition={{ type: "spring", stiffness: 140, damping: 20 }}
-				className="w-full md:w-[60%]"
+				className="w-full md:w-[90%]"
 			>
 				<div className="relative rounded-3xl overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
 					<img
 						src={project.image}
 						alt={project.name}
-						className="w-full h-full object-cover aspect-[21/9]"
+						className={`w-full h-full object-contain ${project.isMobile ? "aspect-[4/3] md:aspect-[3/2]" : "aspect-[16/9] md:aspect-[16/8]"}`}
 					/>
-					<span
-						className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-medium ${
-							project.type === "Company Project" ? "bg-blue-600/90 text-white" : "bg-green-600/90 text-white"
-						}`}
-					>
+					<span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-medium ${
+						project.type === "Company Project" ? "bg-blue-600/90 text-white" : "bg-green-600/90 text-white"
+					}`}> 
 						{project.type}
 					</span>
 				</div>
 			</motion.div>
 
-			{/* Description Card - independent card sliding from right */}
+			{/* Description Card - slides from right */}
 			<motion.div
 				ref={textRef}
-				initial={{ x: 140, opacity: 0 }}
-				animate={textInView ? { x: 0, opacity: 1 } : { x: 140, opacity: 0 }}
+				initial={{ x: 160, opacity: 0 }}
+				animate={textInView ? { x: 0, opacity: 1 } : { x: 160, opacity: 0 }}
 				transition={{ type: "spring", stiffness: 140, damping: 20, delay: 0.05 }}
-				className="w-full md:w-[38%]"
+				className="w-full md:w-[50%]"
 			>
 				<div className="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-6 md:p-8 text-white">
 					<h3 className="text-2xl font-bold mb-3">{project.name}</h3>
@@ -145,7 +120,7 @@ const ProjectRow = ({ project }) => {
 						</div>
 					</div>
 					<div className="flex gap-3">
-						{project.link !== "#" && (
+						{project.hasSite && (
 							<a
 								href={project.link}
 								target="_blank"
@@ -155,14 +130,6 @@ const ProjectRow = ({ project }) => {
 								Open Site
 								</a>
 						)}
-						<a
-							href={project.github}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm font-semibold hover:bg-gray-700 transition-all duration-300 border border-gray-600"
-						>
-							View Code
-						</a>
 					</div>
 				</div>
 			</motion.div>

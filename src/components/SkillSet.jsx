@@ -9,6 +9,13 @@ import TailwindSvg from "../assets/tailwind.svg";
 import ReactSvg from "../assets/react.svg";
 import LaravelSvg from "../assets/laravel.svg";
 import FigmaSvg from "../assets/figma.svg";
+import SpringBoot from "../assets/spring-boot.svg";
+import MySQL from "../assets/mysql.svg";
+import Java from "../assets/java-ar21.svg";
+import Typescript from "../assets/typescript.svg";
+import AWS from "../assets/aws.png";
+import Angular from "../assets/angular.png";
+import Linux from "../assets/linux.png";
 import FramerMotionSvg from "../assets/FramerMotion.svg";
 import reactRouter from '../assets/react-router.svg';
 
@@ -35,13 +42,13 @@ const Skill = [
   {
     id: 4,
     name: "TypeScript",
-    icon: JsSvg, 
+    icon: Typescript, 
     category: "Programming"
   },
   {
     id: 5,
     name: "Angular",
-    icon: ReactSvg, 
+    icon: Angular, 
     category: "Framework"
   },
   {
@@ -59,32 +66,32 @@ const Skill = [
   {
     id: 8,
     name: "Spring Boot",
-    icon: LaravelSvg, 
+    icon: SpringBoot, 
     category: "Backend"
   },
   {
     id: 9,
     name: "Java",
-    icon: JsSvg, 
+    icon: Java, 
     category: "Programming"
   },
   {
     id: 10,
     name: "AWS",
-    icon: TailwindSvg,
-    category: "Styling"
+    icon: AWS,
+    category: "Cloud"
   },
   {
     id: 11,
     name: "Linux",
-    icon: FigmaSvg,
-    category: "Design"
+    icon: Linux,
+    category: "DevOps"
   },
   {
     id: 12,
     name: "MysQL",
-    icon: FramerMotionSvg,
-    category: "Animation"
+    icon: MySQL,
+    category: "Databases"
   },
 ];
 

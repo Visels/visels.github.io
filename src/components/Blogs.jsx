@@ -3,7 +3,7 @@ import Magnet from "./effects/Magnet";
 const Blogs = () => {
   const blogs = [
     {
-      title: "Docker and Kubernetes: The Dynamic Duo of DevOps",
+      title: "Docker and Kubernetes: The Dynamic Duo",
       link: "https://viselstechblog.blogspot.com/2023/07/configuring-liquibase-in-spring-boot.html",
       category: "DevOps"
     },

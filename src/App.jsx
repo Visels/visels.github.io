@@ -77,7 +77,7 @@ function App() {
             <Experience />
           </div>
           
-          <div className=" md:w-[80%]  py-2 px-4  " id="projects">
+          <div className=" md:w-[90%]  py-2 px-4  " id="projects">
             <Projects />
           </div>
           
