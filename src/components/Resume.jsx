@@ -16,11 +16,12 @@ const Resume = () => {
         Resume.
       </h2>
       
-      <div className="mt-6 text-center">
+      <div className="mt-6">
         <p className="md:text-lg text-sm text-white mb-6">
           Download my resume to learn more about my experience, skills, and qualifications.
         </p>
-        
+
+      <div className="text-center">
         <Magnet disabled={false} magnetStrength={10}>
           <button
             onClick={handleDownload}
@@ -32,6 +33,7 @@ const Resume = () => {
         
         <div className="mt-6 text-white text-sm font-jakarta">
           <p>Available formats: PDF</p>
+        </div>
         </div>
       </div>
     </div>
