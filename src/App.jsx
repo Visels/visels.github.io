@@ -68,7 +68,9 @@ function App() {
             whileHover={{ rotate: 3, scale: 1.05 }}
             className="bg-[#0d1117] py-3 px-4 text-white rounded-lg flex justify-center items-center shadow-[0_0_40px_rgb(76_101_137)] "
           >
+            <a href="https://github.com/visels" target="_blank">
             <GitHubCalendar colorScheme="dark" username="visels" />
+            </a>
           </motion.div>
           
           <div className=" md:w-[80%]  py-2 px-4  " id="experience">
