@@ -63,7 +63,7 @@ const LandingPage = () => {
               <a href="https://github.com/visels" target="_blank">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/rasyid-nuruddin" target="_blank">
+              <a href="https://www.linkedin.com/in/elvis-kipchumba-koech-7777a4170/" target="_blank">
                 <FaLinkedin />
               </a>
             </span>

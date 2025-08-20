@@ -37,17 +37,17 @@ const Experience = () => {
               <p className="font-jakarta text-sm text-white">{exp.duration}</p>
             </div>
             
-            <p className="md:text-lg text-sm text-white mb-4">
+            {/* <p className="md:text-lg text-sm text-white mb-4">
               {exp.description}
-            </p>
+            </p> */}
             
             <div className="mb-4">
-              <h4 className="font-jakarta text-lg text-white font-medium mb-3">Key Achievements:</h4>
+              {/* <h4 className="font-jakarta text-lg text-white font-medium mb-3">Key Achievements:</h4> */}
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, achievementIndex) => (
                   <li key={achievementIndex} className="flex items-start">
                     <span className="text-blue-400 mr-2 mt-1 text-lg">•</span>
-                    <span className="text-white text-sm leading-relaxed">
+                    <span className="text-white text-lg leading-relaxed">
                       {achievement}
                     </span>
                   </li>

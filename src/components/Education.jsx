@@ -41,13 +41,13 @@ const Education = () => {
             </p> */}
             
             <div>
-              <h4 className="font-jakarta text-lg text-white font-medium mb-3">Key Areas of Study:</h4>
+              {/* <h4 className="font-jakarta text-lg text-white font-medium mb-3">Key Areas of Study:</h4> */}
               <div className="grid md:grid-cols-1 gap-2">
                 {edu.courses.map((course, courseIndex) => (
                   <div key={courseIndex} className="flex items-start">
                     <div className="flex flex-row justify-center">
                     <span className="text-blue-400 mr-2 mt-1 text-lg">•</span>
-                    <span className="text-white text-sm">
+                    <span className="text-white text-lg">
                       {course}
                     </span>
                     </div>

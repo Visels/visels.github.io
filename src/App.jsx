@@ -59,7 +59,7 @@ function App() {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 px-10 ">
-          <div className=" md:w-[60%]  py-2 px-4  " id="about">
+          <div className=" md:w-[80%]  py-2 px-4  " id="about">
             <About />
           </div>
           
@@ -71,27 +71,27 @@ function App() {
             <GitHubCalendar colorScheme="dark" username="visels" />
           </motion.div>
           
-          <div className=" md:w-[60%]  py-2 px-4  " id="experience">
+          <div className=" md:w-[80%]  py-2 px-4  " id="experience">
             <Experience />
           </div>
           
-          <div className=" md:w-[60%]  py-2 px-4  " id="projects">
+          <div className=" md:w-[80%]  py-2 px-4  " id="projects">
             <Projects />
           </div>
           
-          <div className=" md:w-[60%]  py-2 px-4  " id="education">
+          <div className=" md:w-[80%]  py-2 px-4  " id="education">
             <Education />
           </div>
           
-          <div className=" md:w-[60%]  py-2 px-4  " id="blogs">
+          <div className=" md:w-[80%]  py-2 px-4  " id="blogs">
             <Blogs />
           </div>
           
-          <div className=" md:w-[60%]  py-2 px-4  " id="resume">
+          <div className=" md:w-[68%]  py-2 px-4  " id="resume">
             <Resume />
           </div>
           
-          <div className=" px-3  w-[60%]  py-2 rounded flex flex-col gap-4">
+          <div className=" px-3  w-[80%]  py-2 rounded flex flex-col gap-4">
             <h1 className="font-medium font-jakarta text-2xl text-white">
               Skills.
             </h1>

@@ -3,6 +3,10 @@ import ScrollReveal from "./effects/ScrollRevealText";
 import { motion } from "motion/react";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import examCep from "../assets/examcep.png";
+import lemupay from "../assets/lemupay-banner.png";
+import jobsMonday from "../assets/jobsmonday-banner.png";
+import dotCapital from "../assets/two_phones.webp";
 
 const Projects = () => {
   const projects = [
@@ -13,7 +17,7 @@ const Projects = () => {
       github: "https://github.com/username/lemupay",
       techStack: ["Angular", "Spring Boot", "M-Pesa API", "Banking APIs", "PostgreSQL", "Redis"],
       type: "Company Project",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center"
+      image: lemupay
     },
     {
       name: "ExamCep",
@@ -22,7 +26,7 @@ const Projects = () => {
       github: "https://github.com/username/examcep",
       techStack: ["Next.js", "Spring Boot", "Stripe", "Student Management", "MySQL", "JWT"],
       type: "Company Project",
-      image: "https://images.unsplash.com/photo-1523240798132-5b1b4fa56bb6?w=400&h=300&fit=crop&crop=center"
+      image: examCep
     },
     {
       name: "JobsMonday",
@@ -31,7 +35,7 @@ const Projects = () => {
       github: "https://github.com/username/jobsmonday",
       techStack: ["Angular", "Spring Boot", "Job Board", "Healthcare", "MongoDB", "WebSocket"],
       type: "Company Project",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop&crop=center"
+      image: jobsMonday
     },
     {
       name: "DotCapital",
@@ -39,8 +43,8 @@ const Projects = () => {
       link: "#",
       github: "https://github.com/username/dotcapital",
       techStack: ["React Native", "Spring Boot", "M-Pesa", "Loan Management", "SQLite", "Push Notifications"],
-      type: "Personal Project",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center"
+      type: "Company Project",
+      image: dotCapital
     }
   ];
 
@@ -77,13 +81,13 @@ const ProjectCard = ({ project, index }) => {
           initial={{ x: -100, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
           transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
-          className="lg:w-1/3 p-6 bg-white/5 flex items-center justify-center"
+          className="lg:w-1/3 p-2 bg-white/5 flex items-center justify-center"
         >
           <div className="relative">
             <img 
               src={project.image} 
               alt={project.name}
-              className="w-48 h-32 object-cover rounded-lg border border-gray-600/30"
+              className="object-cover rounded-lg border border-gray-600/30"
             />
             <div className="absolute -top-2 -right-2">
               <span className={`px-2 py-1 rounded-full text-xs font-medium ${
@@ -106,7 +110,7 @@ const ProjectCard = ({ project, index }) => {
         >
           <h3 className="text-xl font-bold mb-3 text-white">{project.name}</h3>
           
-          <p className="text-white mb-4 leading-relaxed text-sm">
+          <p className="text-white mb-4 leading-relaxed text-lg">
             {project.description}
           </p>
           

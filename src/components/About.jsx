@@ -15,7 +15,7 @@ const About = () => {
         
         <div className="flex gap-6 justify-center md:justify-start">
           <a 
-            href="https://github.com/thesimpanze" 
+            href="https://github.com/visels" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 border border-gray-600 hover:border-gray-500"
@@ -25,7 +25,7 @@ const About = () => {
           </a>
           
           <a 
-            href="https://linkedin.com/in/elvis-kipchumba" 
+            href="https://www.linkedin.com/in/elvis-kipchumba-koech-7777a4170/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 border border-blue-500 hover:border-blue-400"

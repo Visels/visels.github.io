@@ -3,19 +3,19 @@ import Magnet from "./effects/Magnet";
 const Blogs = () => {
   const blogs = [
     {
-      title: "Building Scalable Microservices with Spring Boot",
-      link: "https://medium.com/@elvis-kipchumba/building-scalable-microservices",
-      category: "Backend Development"
+      title: "Docker and Kubernetes: The Dynamic Duo of DevOps",
+      link: "https://viselstechblog.blogspot.com/2023/07/configuring-liquibase-in-spring-boot.html",
+      category: "DevOps"
     },
     {
-      title: "Modern Frontend Architecture with Angular and Next.js",
-      link: "https://dev.to/elvis-kipchumba/modern-frontend-architecture",
-      category: "Frontend Development"
+      title: "Dependency Injection: The Magic Behind @Inject",
+      link: "https://viselstechblog.blogspot.com/2023/07/the-evolution-of-cybersecurity-how.html",
+      category: "Development"
     },
     {
-      title: "Integrating Payment Gateways in Fintech Applications",
-      link: "https://hashnode.com/@elvis-kipchumba/payment-gateway-integration",
-      category: "Fintech"
+      title: "The Enigma of Software Documentation",
+      link: "https://viselstechblog.blogspot.com/2023/07/exploring-exciting-intersection-of.html",
+      category: "Documentation"
     }
   ];
 

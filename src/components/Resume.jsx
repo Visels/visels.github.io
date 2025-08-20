@@ -2,12 +2,15 @@ import Magnet from "./effects/Magnet";
 
 const Resume = () => {
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/resume/ELVIS_KIPCHUMBA_RESUME.pdf';
-    link.download = 'ELVIS_KIPCHUMBA_RESUME.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open the PDF in a new tab (not a new window)
+    const pdfUrl = '/assets/resume/ELVIS_KIPCHUMBA_RESUME.pdf';
+    const newTab = window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+    if (newTab) {
+      newTab.focus();
+    } else {
+      // Fallback: open in same tab if popup blocked
+      window.location.href = pdfUrl;
+    }
   };
 
   return (
