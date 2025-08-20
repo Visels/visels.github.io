@@ -99,7 +99,7 @@ function App() {
         </div>
       </div>
       <div
-        className="flex justify-center px-10 mt-10 md:h-[80vh] "
+        className="flex justify-center px-10 mt-20 md:h-[80vh] "
         id="contact"
       >
         <Contact />

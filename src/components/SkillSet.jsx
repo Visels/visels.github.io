@@ -121,7 +121,7 @@ const SkillSet = () => {
       </div>
       
       {/* Skills Summary */}
-      <div className="mt-8 p-6 bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-2xl">
+      <div className="mt-10 p-10 bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-2xl">
         <h3 className="font-jakarta text-xl font-semibold text-white mb-4 text-center">
           Technical Expertise Summary
         </h3>
