@@ -1,7 +1,7 @@
 import { easeInOut, motion, useScroll, useTransform } from "motion/react";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import RasyidImg from "../assets/Rasyid-2.jpg";
+import RasyidImg from "../assets/visels.jpeg";
 
 const LandingPage = () => {
   const { scrollY } = useScroll();
@@ -38,7 +38,7 @@ const LandingPage = () => {
             <p>I'm</p>
             <Typewriter
               options={{
-                strings: ["Rasyid Nuruddin.", "a Frontend Dev.", "a UI/UX Designer."],
+                strings: ["Elvis Kipchumba.", "a Software Engineer.", "a Full-Stack Dev."],
                 autoStart: true,
                 loop: true,
               }}
@@ -57,10 +57,10 @@ const LandingPage = () => {
             transition={{ duration: 0.5, delay: 1.65, ease: "easeInOut" }}
           >
             <p className="text-gray-400 text-sm md:text-lg font-normal font-jakarta w-full md:w-3/4 mt-3">
-              I am a human with a passion for creating beautiful and functional user interfaces. I have experience in frontend tools like ReactJS.
+              I am a passionate Software Engineer with expertise in building scalable frontend and backend applications. I specialize in Angular, Next.js, and Spring Boot technologies.
             </p>
             <span className="text-white text-lg md:text-xl flex justify-center md:justify-start gap-4 pt-3">
-              <a href="https://github.com/thesimpanze" target="_blank">
+              <a href="https://github.com/visels" target="_blank">
                 <FaGithub />
               </a>
               <a href="https://linkedin.com/in/rasyid-nuruddin" target="_blank">
@@ -80,7 +80,7 @@ const LandingPage = () => {
           transition={{ ease: "easeInOut" }}
           className="relative w-44 h-44 md:w-60 md:h-60 overflow-hidden shadow-[0_0_30px_rgba(200,170,142,0.89)]"
         >
-          <motion.img src={RasyidImg} alt="Rasyid" className="w-full h-full object-cover" />
+          <motion.img src={RasyidImg} alt="Elvis" className="w-full h-full object-cover" />
         </motion.div>
       </motion.div>
     </motion.div>

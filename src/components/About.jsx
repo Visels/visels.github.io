@@ -1,27 +1,42 @@
 
-import ScrollFloat from "./effects/ScrollFloat";
-import ScrollReveal from "./effects/ScrollRevealText";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
     <div className="px-4 py-8">
-      <ScrollFloat animationDuration={1} ease="back.inOut(2)" scrollStart="center bottom+=50%" scrollEnd="bottom bottom-=40%" stagger={0.03} textClassName="font-jakarta text-3xl text-white ">
+      <h2 className="font-jakarta text-3xl text-white font-bold mb-6">
         About me.
-      </ScrollFloat>
-      <ScrollReveal textClassName="md:text-xl text-sm mb-2 text-gray-400" baseOpacity={0} enableBlur={true} baseRotation={5} blurStrength={10}>
-        I’m an Informatics Engineering student at Politeknik Elektronika Negeri Surabaya (PENS) and a junior frontend developer passionate about building user-friendly web applications. I work with technologies like React.js, Laravel,
-        Tailwind CSS, HTML, CSS, and JavaScript. I enjoy turning UI/UX designs into clean, responsive interfaces and continuously learning new tools to improve both functionality and user experience in every project I build.
-      </ScrollReveal>
-      <div className="border-b-2 border-gray-400 pt-3 mb-3" />
-
-      <ScrollFloat animationDuration={1} ease="back.inOut(2)" scrollStart="center bottom+=30%" scrollEnd="bottom bottom-=30%" stagger={0.03} textClassName="font-jakarta text-3xl text-white ">
-        Education.
-      </ScrollFloat>
-      <ScrollReveal textClassName="md:text-xl text-sm text-gray-400" baseOpacity={0} enableBlur={true} baseRotation={10} blurStrength={10}>
-        2023 - present: collage student of Informatic Engineering at Electronic Engineering Polytechnic Institute of Surabaya
-      </ScrollReveal>
-
+      </h2>
+      
+      <div className="mt-6">
+        <p className="md:text-xl text-sm text-white mb-6 leading-relaxed">
+          I'm a passionate Software Engineer with 2+ years of experience building full-stack applications. I specialize in frontend and backend development using modern technologies like Angular, Next.js, and Spring Boot. I enjoy creating scalable, user-friendly applications and continuously learning new tools to deliver exceptional user experiences.
+        </p>
+        
+        <div className="flex gap-6 justify-center md:justify-start">
+          <a 
+            href="https://github.com/thesimpanze" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-all duration-300 border border-gray-600 hover:border-gray-500"
+          >
+            <FaGithub className="text-xl" />
+            <span className="font-medium">GitHub</span>
+          </a>
+          
+          <a 
+            href="https://linkedin.com/in/elvis-kipchumba" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 border border-blue-500 hover:border-blue-400"
+          >
+            <FaLinkedin className="text-xl" />
+            <span className="font-medium">LinkedIn</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
+
 export default About;

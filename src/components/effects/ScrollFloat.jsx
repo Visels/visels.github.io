@@ -37,6 +37,14 @@ const ScrollFloat = ({
 
     const charElements = el.querySelectorAll(".inline-block");
 
+    // Set initial state to visible
+    gsap.set(charElements, {
+      opacity: 1,
+      yPercent: 0,
+      scaleY: 1,
+      scaleX: 1
+    });
+
     gsap.fromTo(
       charElements,
       {
@@ -60,10 +68,23 @@ const ScrollFloat = ({
           scroller,
           start: scrollStart,
           end: scrollEnd,
-          scrub: true
+          scrub: true,
+          onEnter: () => {
+            // Ensure text is visible when entering viewport
+            gsap.set(charElements, { opacity: 1 });
+          },
+          onEnterBack: () => {
+            // Ensure text is visible when scrolling back up
+            gsap.set(charElements, { opacity: 1 });
+          }
         },
       }
     );
+
+    // Cleanup function
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, [
     scrollContainerRef,
     animationDuration,

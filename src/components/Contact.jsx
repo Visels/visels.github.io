@@ -1,5 +1,5 @@
 import Lanyard from "./Lanyard";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import TextPressure from "./effects/TextPressure";
 
 const Contact = () => {
@@ -29,9 +29,9 @@ const Contact = () => {
             I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </p>
           <div className="text-xl md:text-2xl flex mt-4 gap-5">
-            <a href="https://wa.me/6285156696946" target="_blank"><FaWhatsapp className="hover:text-green-500 transition" /></a>
-            <a href="https://instagram.com/whorsyd" target="_blank"><FaInstagram className="hover:text-pink-500 transition" /></a>
-            <a href="https://linkedin.com/in/rasyid-nuruddin" target="_blank"><FaLinkedin className="hover:text-blue-600 transition" /></a>
+            <a href="mailto:elvis.kipchumba@example.com" target="_blank"><FaEnvelope className="hover:text-blue-500 transition" /></a>
+            <a href="https://github.com/thesimpanze" target="_blank"><FaGithub className="hover:text-gray-800 transition" /></a>
+            <a href="https://linkedin.com/in/elvis-kipchumba" target="_blank"><FaLinkedin className="hover:text-blue-600 transition" /></a>
           </div>
         </div>
       </div>
