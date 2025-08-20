@@ -32,7 +32,7 @@ const Education = () => {
             <div className="absolute -left-3 w-4 h-4 bg-gray-400 rounded-full"></div>
             <div className="mb-4">
               <h3 className="font-jakarta text-xl text-white font-semibold">{edu.degree}</h3>
-              <p className="font-jakarta text-lg text-blue-400">{edu.institution}</p>
+              <p className="font-jakarta text-lg text-blue-400 font-bold mt-2 mb-2">{edu.institution}</p>
               <p className="text-sm text-white">{edu.duration}</p>
             </div>
             
