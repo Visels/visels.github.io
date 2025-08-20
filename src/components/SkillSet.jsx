@@ -10,6 +10,7 @@ import ReactSvg from "../assets/react.svg";
 import LaravelSvg from "../assets/laravel.svg";
 import FigmaSvg from "../assets/figma.svg";
 import SpringBoot from "../assets/spring-boot.svg";
+import Nextjs from "../assets/nextjs.svg";
 import MySQL from "../assets/mysql.svg";
 import Java from "../assets/java-ar21.svg";
 import Typescript from "../assets/typescript.svg";
@@ -54,7 +55,7 @@ const Skill = [
   {
     id: 6,
     name: "Next.js",
-    icon: ReactSvg, 
+    icon: Nextjs, 
     category: "Framework"
   },
   {
