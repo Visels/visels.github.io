@@ -28,7 +28,7 @@ const Blogs = () => {
       <div className="mt-6">
         {/* <h3 className="text-2xl font-bold text-white text-center mb-6">Latest Articles & Insights</h3> */}
         
-        <p className="text-white text-lg mb-8 text-center">
+        <p className="text-white text-lg mb-8">
           Sharing insights and experiences from my journey in software development
         </p>
         

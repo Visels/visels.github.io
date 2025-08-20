@@ -3,7 +3,7 @@ import Magnet from "./effects/Magnet";
 const Resume = () => {
   const handleDownload = () => {
     // Open the PDF in a new tab (not a new window)
-    const pdfUrl = '/assets/resume/ELVIS_KIPCHUMBA_RESUME.pdf';
+    const pdfUrl = '/ELVIS_KIPCHUMBA_RESUME.pdf';
     const newTab = window.open(pdfUrl, '_blank', 'noopener,noreferrer');
     if (newTab) {
       newTab.focus();
@@ -33,7 +33,7 @@ const Resume = () => {
           </button>
         </Magnet>
         
-        <div className="mt-4 text-white text-sm font-jakarta">
+        <div className="mt-6 text-white text-sm font-jakarta">
           <p>Available formats: PDF</p>
         </div>
       </div>

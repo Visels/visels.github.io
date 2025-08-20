@@ -3,6 +3,7 @@ import { easeInOut, motion, useScroll, useTransform } from "motion/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import TextPressure from "./effects/TextPressure";
 import RasyidImg from "../assets/visels.jpeg";
+import avatar from "../assets/avatar.png";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
       {/* 3D Lanyard */}
       <div className="w-full md:w-[40%] h-60 md:h-auto">
         {/* <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} /> */}
-        <motion.img src={RasyidImg} alt="Elvis" className="w-full h-full object-cover" />
+        <motion.img src={avatar} alt="Elvis" className="w-full  object-cover" />
       </div>
       {/* <motion.div
           whileHover={{ scale: 1.05, borderRadius: ["80%", "50%", "30%", "10%", "2%"] }}

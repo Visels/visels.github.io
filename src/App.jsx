@@ -87,14 +87,11 @@ function App() {
             <Blogs />
           </div>
           
-          <div className=" md:w-[68%]  py-2 px-4  " id="resume">
+          <div className=" md:w-[80%]  py-2 px-4  " id="resume">
             <Resume />
           </div>
           
           <div className=" px-3  w-[80%]  py-2 rounded flex flex-col gap-4">
-            <h1 className="font-medium font-jakarta text-2xl text-white">
-              Skills.
-            </h1>
             <SkillSet />
           </div>
         </div>

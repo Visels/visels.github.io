@@ -35,19 +35,19 @@ const Skill = [
   {
     id: 4,
     name: "TypeScript",
-    icon: JsSvg, // Using JS icon for TypeScript
+    icon: JsSvg, 
     category: "Programming"
   },
   {
     id: 5,
     name: "Angular",
-    icon: ReactSvg, // Using React icon for Angular
+    icon: ReactSvg, 
     category: "Framework"
   },
   {
     id: 6,
     name: "Next.js",
-    icon: ReactSvg, // Using React icon for Next.js
+    icon: ReactSvg, 
     category: "Framework"
   },
   {
@@ -59,30 +59,30 @@ const Skill = [
   {
     id: 8,
     name: "Spring Boot",
-    icon: LaravelSvg, // Using Laravel icon for Spring Boot
+    icon: LaravelSvg, 
     category: "Backend"
   },
   {
     id: 9,
     name: "Java",
-    icon: JsSvg, // Using JS icon for Java
+    icon: JsSvg, 
     category: "Programming"
   },
   {
     id: 10,
-    name: "Tailwind",
+    name: "AWS",
     icon: TailwindSvg,
     category: "Styling"
   },
   {
     id: 11,
-    name: "Figma",
+    name: "Linux",
     icon: FigmaSvg,
     category: "Design"
   },
   {
     id: 12,
-    name: "Motion",
+    name: "MysQL",
     icon: FramerMotionSvg,
     category: "Animation"
   },
@@ -91,6 +91,9 @@ const Skill = [
 const SkillSet = () => {
   return (
     <div className="space-y-8">
+       <h2 className="font-jakarta text-3xl text-white font-bold mb-6">
+        Skills
+      </h2>
       {/* Skills Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {Skill.map((skill) => (

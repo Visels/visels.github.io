@@ -4,9 +4,9 @@ import ScrollReveal from "./effects/ScrollRevealText";
 const Experience = () => {
   const experiences = [
     {
-      company: "Exelient",
-      position: "Software Engineer",
-      duration: "2022 - Present",
+      company: "Exelient Technologies",
+      position: "Software Engineer (Fullstack)",
+      duration: "May 2023 - Present",
       description: "Building frontend and backend applications using modern technologies. Working on full-stack development with focus on scalable and maintainable code.",
       achievements: [
         "Developed and maintained full-stack web applications using Angular, Next.js, and Spring Boot",
@@ -17,7 +17,7 @@ const Experience = () => {
         "Optimized application performance through code refactoring and database query optimization",
         "Participated in code reviews and contributed to team coding standards and best practices"
       ],
-      technologies: ["Angular", "Next.js", "Spring Boot", "TypeScript", "Java", "REST APIs"]
+      technologies: ["Angular", "Next.js", "Spring Boot", "TypeScript", "Java", "REST APIs", "MySQL", "AWS"]
     }
   ];
 
@@ -32,8 +32,8 @@ const Experience = () => {
           <div key={index} className="border-l-2 border-gray-400 pl-6 relative">
             <div className="absolute -left-3 w-4 h-4 bg-gray-400 rounded-full"></div>
             <div className="mb-4">
-              <h3 className="font-jakarta text-xl text-white font-semibold">{exp.position}</h3>
-              <p className="font-jakarta text-lg text-blue-400">{exp.company}</p>
+              <h3 className="font-jakarta text-xl text-white font-semibold mb-2">{exp.position}</h3>
+              <p className="font-jakarta text-lg text-blue-400 mb-2">{exp.company}</p>
               <p className="font-jakarta text-sm text-white">{exp.duration}</p>
             </div>
             
