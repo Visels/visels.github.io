@@ -7,10 +7,7 @@ const Resume = () => {
     const newTab = window.open(pdfUrl, '_blank', 'noopener,noreferrer');
     if (newTab) {
       newTab.focus();
-    } else {
-      // Fallback: open in same tab if popup blocked
-      window.location.href = pdfUrl;
-    }
+    } 
   };
 
   return (
